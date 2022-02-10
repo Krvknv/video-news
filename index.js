@@ -82,7 +82,10 @@ window.onload = function () {
   getData();
 };
 
+/* Hook up the event listeners*/
+
 formBtn.addEventListener("click", makeSearch);
+
 input.addEventListener("keydown", function (e) {
   if (e.keyCode === 13) {
     makeSearch();
