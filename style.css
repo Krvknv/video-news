@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #9966cc;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  height: 80px;
+  background: #6441a5;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form {
+  position: relative;
+}
+
+.form :focus {
+  background: #003366;
+}
+
+.form__text {
+  padding: 10px 55px 10px 10px;
+  height: 50px;
+  width: 250px;
+  border-radius: 50px;
+  border: 2px solid #003366;
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+
+.form__text::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__text:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__text::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__text::placeholder {
+  color: #fff;
+}
+
+.form__btn {
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  height: 50px;
+  width: 50px;
+  background: #e5e4e2;
+  border: none;
+  border-radius: 50px;
+}
+
+.main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.card:hover .card__description {
+  bottom: 0;
+}
+
+.card__photo {
+  height: 450px;
+  width: 300px;
+}
+
+.card__photo img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.card__info {
+  padding: 10px;
+  height: 120px;
+  width: 300px;
+  background: #6441a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.card__info h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.card__info .mark {
+  color: #fff;
+  padding: 4px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background: #9966cc;
+}
+
+.card__description {
+  bottom: -1000px;
+  padding: 20px;
+  overflow-y: auto;
+  width: 100%;
+  max-height: 100%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
+}
+
+.card__description h3 {
+  margin-bottom: 20px;
+}
+
+.card__description p {
+  font-size: 18px;
+}
+
+.footer {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  padding: 20px;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.data {
+  width: 182px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials {
+  width: 188px;
+}
+
+.socials__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.socials__icon img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
